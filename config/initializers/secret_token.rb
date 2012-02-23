@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Rockpaperscissors::Application.config.secret_token = '412baab36d1c0ab10351a39d8f4c9e01f97c7fb0a1db604fd1be1f52b68f332533019b3985ac6dd9c8632b5082a61d1b1161c0b447e0fa352f3bc0ab4cc45078'
+RockPaperScissors::Application.config.secret_token = '896969d9fe3b9e35458a54378ccaee9b1724c31b40c381cb0660185adfb58df36eaa93e2517802680b0dfb2904d627636ffb9e3b99071f812ce92e2ce874a0a4'

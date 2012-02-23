@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Rockpaperscissors::Application.load_tasks
+RockPaperScissors::Application.load_tasks
