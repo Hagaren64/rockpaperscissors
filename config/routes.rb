@@ -1,4 +1,10 @@
 Rockpaperscissors::Application.routes.draw do
+  get "pages/throw"
+
+  get "pages/clear"
+
+  get "pages/stats"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
