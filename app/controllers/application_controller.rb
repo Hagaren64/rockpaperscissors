@@ -1,8 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 before_filter do
-  session[:history] = Array.new
-  
+    
   if session[:win].to_i > 0
     session[:win]=session[:win]
   else
