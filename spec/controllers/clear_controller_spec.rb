@@ -11,7 +11,7 @@ describe ClearController do
   end
   
   describe "Test clear page" do
-    it "should contain <h1>clear</h1>" do
+    it "should contain <h1>CLEAR</h1>" do
       get :index
       response.should have_selector("h1", :content => "CLEAR")
     end

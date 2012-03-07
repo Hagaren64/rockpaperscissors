@@ -57,6 +57,11 @@ describe ThrowController do
       elsif @comp_throw == @defeat[@userthrow] 
   			response.should have_selector("h2", :content => "You Won!")
   			print "W // "
+    	# The following 2 else if statements check to see if @comp_throw is included in
+    	# @defeat.  If it is, then it will be considered as a "lose"
+    	# However, if it isn't contained in @defeat, then the app will always return
+    	# "You Lost!" regardless of the user move; therefore, if the page contains
+    	# "You Lost!" then rspec fails the test
       elsif @defeat.include?(@comp_throw)==true
   			response.should have_selector("h2", :content => "You Lost!")
   			print "L // "

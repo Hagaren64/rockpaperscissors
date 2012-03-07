@@ -16,4 +16,7 @@ Homework 6 Requirements
 
   @defeat = {roc: :scissors, pape: :rock, scissor: :paper}
 
-  Notice that I deleted the <b>last letter</b> in each of the keys.  Since <a href="https://github.com/Hagaren64/rockpaperscissors/blob/master/spec/controllers/throw_controller_spec.rb">throw_controller_spec.rb</a> is expecting either a "rock", "paper", or "scissors" as a valid move, it will fail due to incorrect behavior.
+  Notice that I deleted the <b>last letter</b> in each of the keys.  Since <a href="https://github.com/Hagaren64/rockpaperscissors/blob/master/spec/controllers/throw_controller_spec.rb">throw_controller_spec.rb</a> is expecting either a "rock", "paper", or "scissors" as a valid move, it will fail due to incorrect behavior.<br>
+  A simpler example would also be if <a href="https://github.com/Hagaren64/rockpaperscissors/blob/master/app/views/clear/index.html.erb">clear/index.html.erb</a> on line 1 were changed to:
+   "<h1>DONE!</h1>"
+  Instead of containing a "<h1>CLEAR</h1>", rspec finds "<h1>DONE!</h1>", which fails the test
