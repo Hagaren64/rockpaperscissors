@@ -7,16 +7,16 @@ end
 
 def userthrow
     @player_throw = params[:type].to_sym
-    if !@throws.include?(@player_throw)
-        halt 403, "You must throw one of the following: #{@throws}"
-    end
+    #if !@throws.include?(@player_throw)
+    #    halt 403, "You must throw one of the following: #{@throws}"
+    #end
     
     if @player_throw == @computer_throw
       @result = "You tied."
     elsif @computer_throw == @defeat[@player_throw]
       session[:win] += 1
       @result = "You Won!"
-    else
+    elsif @defeat.include?(@computer_throw)==true   # checks to see if @computer_throw is in @defeat
       session[:lose] += 1
       @result = "You Lost!"
     end
